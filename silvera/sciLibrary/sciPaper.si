@@ -1,0 +1,49 @@
+import "setup.si"
+import "user.si"
+
+service SciPaper {
+    service_registry=ServiceRegistry
+
+    api {
+        @crud
+        typedef SciPaper [
+            
+            @id str id
+            @required str author
+            @required str title
+            list<Section> sections
+        ]
+
+        @crud
+        typedef Section [
+            @id str name
+            @required str content
+        ]
+
+        typedef UploadPaperDto [
+            @required str title
+            @required list<Section> sections
+        ]
+    
+
+        @rest(method=POST, mapping="/{username}")
+        SciPaper uploadSciPaper(str username, UploadPaperDto dto)
+    
+        @rest(method=GET, mapping="/")
+        list<SciPaper> getAll()
+
+        @rest(method=GET, mapping="/{id}")
+        SciPaper getOne(str id)
+
+        @producer(PaperMsgGroup.PaperPublished -> Broker.PAPER_PUBLISHED_CHANNEL)
+        void publishPaper(SciPaper sciPaper)
+    }
+    
+}
+
+dependency SciPaper -> User {
+    getName[fail_silent]
+    isLoggedIn[fallback_static]
+}
+
+

@@ -1,0 +1,7 @@
+# Project exclude paths
+/silvera/sciLibrary/output/ConfigServer/target/
+/silvera/sciLibrary/output/EntryGateway/target/
+/silvera/sciLibrary/output/Library/target/
+/silvera/sciLibrary/output/SciPaper/target/
+/silvera/sciLibrary/output/ServiceRegistry/target/
+/silvera/sciLibrary/output/User/target/

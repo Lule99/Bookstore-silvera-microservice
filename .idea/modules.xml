@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/silvera/sciLibrary/output/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/silvera/sciLibrary/output/ConfigServer/ConfigServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silvera/sciLibrary/output/EntryGateway/EntryGateway.iml" filepath="$PROJECT_DIR$/silvera/sciLibrary/output/EntryGateway/EntryGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silvera/sciLibrary/output/Library/Library.iml" filepath="$PROJECT_DIR$/silvera/sciLibrary/output/Library/Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silvera/sciLibrary/output/SciPaper/SciPaper.iml" filepath="$PROJECT_DIR$/silvera/sciLibrary/output/SciPaper/SciPaper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silvera/sciLibrary/output/ServiceRegistry/ServiceRegistry.iml" filepath="$PROJECT_DIR$/silvera/sciLibrary/output/ServiceRegistry/ServiceRegistry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Silvera_Microservice_Bookstore.iml" filepath="$PROJECT_DIR$/.idea/Silvera_Microservice_Bookstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/silvera/sciLibrary/output/User/User.iml" filepath="$PROJECT_DIR$/silvera/sciLibrary/output/User/User.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/microservice-Spring/gateway/gateway.iml" filepath="$PROJECT_DIR$/spring/microservice-Spring/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/microservice-Spring/library-service/library-service.iml" filepath="$PROJECT_DIR$/spring/microservice-Spring/library-service/library-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/microservice-Spring/sci-paper-service/sci-paper-service.iml" filepath="$PROJECT_DIR$/spring/microservice-Spring/sci-paper-service/sci-paper-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/microservice-Spring/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/spring/microservice-Spring/service-registry/service-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring/microservice-Spring/user-service/user-service.iml" filepath="$PROJECT_DIR$/spring/microservice-Spring/user-service/user-service.iml" />
+    </modules>
+  </component>
+</project>

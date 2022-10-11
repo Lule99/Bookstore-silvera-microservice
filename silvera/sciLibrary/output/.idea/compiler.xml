@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="EntryGateway" />
+        <module name="User" />
+        <module name="ConfigServer" />
+        <module name="ServiceRegistry" />
+        <module name="Library" />
+        <module name="SciPaper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ConfigServer" target="1.8" />
+      <module name="EntryGateway" target="17" />
+      <module name="Library" target="17" />
+      <module name="SciPaper" target="17" />
+      <module name="ServiceRegistry" target="17" />
+      <module name="User" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConfigServer" options="-parameters" />
+      <module name="EntryGateway" options="-parameters" />
+      <module name="Library" options="-parameters" />
+      <module name="SciPaper" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
+      <module name="User" options="-parameters" />
+    </option>
+  </component>
+</project>

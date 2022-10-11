@@ -1,0 +1,35 @@
+import "setup.si"
+
+service Library {
+    service_registry=ServiceRegistry
+
+    api {
+            @crud
+            typedef LibraryEntry [
+
+                @id str id                    
+                @required str paperId
+                @required str title
+                @required str author
+            
+            ]
+
+            typedef LibraryEntryDto [
+
+                @required str paperId
+                @required str title
+                @required str author
+            ]
+
+            
+            @rest(method=GET, mapping="/")
+            list<LibraryEntry> getAll()
+
+            internal {
+
+                @consumer(PaperMsgGroup.PaperPublished <- Broker.PAPER_PUBLISHED_CHANNEL)
+                void sciPaperCreated()
+            }       
+    }
+
+}

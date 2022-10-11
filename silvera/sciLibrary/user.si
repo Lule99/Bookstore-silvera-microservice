@@ -1,0 +1,41 @@
+import "setup.si"
+
+service User {
+    service_registry=ServiceRegistry
+
+    api{
+        @crud
+        typedef User [
+            
+            @id str username
+            @required str password
+            @required str firstName
+            @required str lastName
+            str email
+        ]
+
+        typedef LoginDto [
+            @required str username
+            @required str password
+        ]
+
+        @rest(method=POST)
+        User register(User user)
+
+        @rest(method=POST)
+        User login(LoginDto loginDto)
+
+        @rest(method=POST, mapping="logout/{username}")
+        void logout(str username)
+
+        @rest(method=GET, mapping="/")
+        list<User> getAllUsers()
+
+        @rest(method=GET, mapping="/is-logged-in/{username}")
+        bool isLoggedIn(str username)
+
+        @rest(method=GET, mapping="/get-name/{username}")
+        str getName(str username)
+    }
+    
+}
