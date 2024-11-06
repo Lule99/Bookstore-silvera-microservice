@@ -1,7 +1,7 @@
 # Bookstore-silvera-microservice
 
-Implementation of a distributed system based on microservices for publishing scientific papers developed with silvera.  
-Silvera is a tool for accelerating the development of microservice architectures, which is developed as a
+Demo Implementation of a distributed system based on microservices for publishing scientific papers developed with silvera as a part of a phd research.  
+[Silvera](https://alensuljkanovic.github.io/silvera/) is a tool for accelerating the development of microservice architectures, which is developed as a
 part of PhD research.  
 The system contains the following microservices: User, SciPaper, and Library.  
 User microservice allows users to register and log in. When registering, a user provides a username
