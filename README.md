@@ -2,7 +2,10 @@
 
 Demo Implementation of a distributed system based on microservices for publishing scientific papers developed with silvera as a part of a phd research.  
 [Silvera](https://alensuljkanovic.github.io/silvera/) is a tool for accelerating the development of microservice architectures, which is developed as a
-part of PhD research.  
+part of PhD research.
+## Specification
+The research survey with project details can be found in [silvera-survey-instructions-B.pdf](https://github.com/Lule99/Bookstore-silvera-microservice/blob/master/silvera-survey-instructions-B.pdf)
+## Model
 The system contains the following microservices: User, SciPaper, and Library.  
 User microservice allows users to register and log in. When registering, a user provides a username
 (ID), password (mandatory), first name (mandatory), last name (mandatory), and email (optional). In
@@ -14,3 +17,6 @@ a message broker. The message contains the paper’s ID, paper’s title, and au
 Library microservice has a method that listens to the PUBLISH_PAPER message and keeps data
 provided via message in the database. This microservice also has a public method that lists all data
 from the database.
+## System Design
+![Architecture](https://github.com/user-attachments/assets/842cc5e7-1019-46e3-b11f-584881fa5bb8)
+
